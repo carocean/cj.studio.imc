@@ -1,0 +1,14 @@
+{
+	"valids": [
+		{
+			"name": "imchannel",
+			"uris": [
+				"app://uaap:way"
+			],
+			"props": {
+				
+			}
+		}
+	],
+	"invalids": []
+}
