@@ -3,7 +3,7 @@
 		{
 			"name": "imchannel",
 			"uris": [
-				"app://uaap:way"
+				"app://channel:way"
 			],
 			"props": {
 				

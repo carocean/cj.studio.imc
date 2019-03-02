@@ -2,3 +2,40 @@
 2019年02月14日 23:24:13  信息 : -------------网关启动完毕-------------------
 2019年02月15日 09:53:56  信息 : -------------网关启动完毕-------------------
 2019年03月02日 12:56:17  信息 : -------------网关启动完毕-------------------
+2019年03月02日 23:55:43  信息 : -------------网关启动完毕-------------------
+2019年03月03日 00:06:13  信息 : -------------网关启动完毕-------------------
+2019年03月03日 00:09:21  信息 : -------------网关启动完毕-------------------
+2019年03月03日 00:09:25  警告: cj.studio.gateway.server.handler.WebsocketChannelHandler - 服务器：wsSite 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的属性中指定：OnChannelEvent-Notify-Dest=destination1
+2019年03月03日 00:10:37  信息 : -------------网关启动完毕-------------------
+2019年03月03日 00:10:40  信息 : 已装载共享库/Users/caroceanjofers/studio/github/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年03月03日 00:11:31  信息 : -------------网关启动完毕-------------------
+2019年03月03日 00:11:34  信息 : 已装载共享库/Users/caroceanjofers/studio/github/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年03月03日 00:16:15  信息 : -------------网关启动完毕-------------------
+2019年03月03日 00:16:22  信息 : 已装载共享库/Users/caroceanjofers/studio/github/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年03月03日 00:16:57  信息 : -------------网关启动完毕-------------------
+2019年03月03日 00:17:01  警告: cj.studio.gateway.server.handler.WebsocketChannelHandler - 服务器：wsSite 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的属性中指定：OnChannelEvent-Notify-Dest=destination1
+2019年03月03日 00:17:57  警告: cj.studio.gateway.server.handler.WebsocketChannelHandler - 服务器：wsSite 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的属性中指定：OnChannelEvent-Notify-Dest=destination1
+2019年03月03日 00:17:57  警告: cj.studio.gateway.server.handler.WebsocketChannelHandler - 服务器：wsSite 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的属性中指定：OnChannelEvent-Notify-Dest=destination1
+2019年03月03日 00:18:14  警告: cj.studio.gateway.server.handler.WebsocketChannelHandler - 服务器：wsSite 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的属性中指定：OnChannelEvent-Notify-Dest=destination1
+2019年03月03日 00:19:41  信息 : -------------网关启动完毕-------------------
+2019年03月03日 00:20:08  警告: cj.studio.gateway.server.handler.WebsocketChannelHandler - 服务器：wsSite 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的属性中指定：OnChannelEvent-Notify-Dest=destination1
+2019年03月03日 00:20:17  错误: cj.studio.gateway.tools.sc.ServersConsole - 不认识的命令：;ls
+2019年03月03日 00:21:36  警告: cj.studio.gateway.server.handler.WebsocketChannelHandler - 服务器：wsSite 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的属性中指定：OnChannelEvent-Notify-Dest=destination1
+2019年03月03日 00:22:08  警告: cj.studio.gateway.server.handler.WebsocketChannelHandler - 服务器：wsSite 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的属性中指定：OnChannelEvent-Notify-Dest=destination1
+2019年03月03日 00:22:34  警告: cj.studio.gateway.server.handler.WebsocketChannelHandler - 服务器：wsSite 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的属性中指定：OnChannelEvent-Notify-Dest=destination1
+2019年03月03日 00:23:34  信息 : 已装载共享库/Users/caroceanjofers/studio/github/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年03月03日 00:24:34  警告: cj.studio.gateway.server.handler.WebsocketChannelHandler - 服务器：wsSite 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的属性中指定：OnChannelEvent-Notify-Dest=destination1
+2019年03月03日 00:26:32  警告: cj.studio.gateway.server.handler.WebsocketChannelHandler - 服务器：wsSite 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的属性中指定：OnChannelEvent-Notify-Dest=destination1
+2019年03月03日 00:27:07  警告: cj.studio.gateway.server.handler.WebsocketChannelHandler - 服务器：wsSite 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的属性中指定：OnChannelEvent-Notify-Dest=destination1
+2019年03月03日 00:27:58  警告: cj.studio.gateway.server.handler.WebsocketChannelHandler - 服务器：wsSite 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的属性中指定：OnChannelEvent-Notify-Dest=destination1
+2019年03月03日 00:29:01  信息 : -------------网关启动完毕-------------------
+2019年03月03日 00:29:08  警告: cj.studio.gateway.server.handler.WebsocketChannelHandler - 服务器：wsSite 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的属性中指定：OnChannelEvent-Notify-Dest=destination1
+2019年03月03日 00:29:11  信息 : 已装载共享库/Users/caroceanjofers/studio/github/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年03月03日 00:29:34  信息 : -------------网关启动完毕-------------------
+2019年03月03日 00:29:41  警告: cj.studio.gateway.server.handler.WebsocketChannelHandler - 服务器：wsSite 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的属性中指定：OnChannelEvent-Notify-Dest=destination1
+2019年03月03日 00:30:57  警告: cj.studio.gateway.server.handler.WebsocketChannelHandler - 服务器：wsSite 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的属性中指定：OnChannelEvent-Notify-Dest=destination1
+2019年03月03日 00:30:59  信息 : 已装载共享库/Users/caroceanjofers/studio/github/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年03月03日 00:41:52  信息 : -------------网关启动完毕-------------------
+2019年03月03日 00:41:57  信息 : 已装载共享库/Users/caroceanjofers/studio/github/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年03月03日 01:17:55  信息 : -------------网关启动完毕-------------------
+2019年03月03日 01:18:27  信息 : 已装载共享库/Users/caroceanjofers/studio/github/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
