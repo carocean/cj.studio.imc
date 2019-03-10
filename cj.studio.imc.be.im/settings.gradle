@@ -1,0 +1,4 @@
+include "cj.studio.imc.be.im.program"
+include "cj.studio.imc.be.im.main"
+include "cj.studio.imc.be.im.plugin"
+include "cj.studio.imc.be.im.stub"

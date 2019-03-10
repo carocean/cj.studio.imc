@@ -1,0 +1,11 @@
+[
+	{
+		"name": "wsSite",
+		"protocol": "ws",
+		"host": "localhost:10011",
+		"props": {
+			"wsPath":"/",
+			"OnChannelEvent-Notify-Dests":"imchannel"
+		}
+	}
+]

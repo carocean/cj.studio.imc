@@ -1,0 +1,14 @@
+{
+	"valids": [
+		{
+			"name": "im",
+			"uris": [
+				"app://im:way"
+			],
+			"props": {
+				
+			}
+		}
+	],
+	"invalids": []
+}

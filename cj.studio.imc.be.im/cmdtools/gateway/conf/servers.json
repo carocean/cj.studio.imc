@@ -1,0 +1,10 @@
+[
+	{
+		"name": "httpSite",
+		"protocol": "http",
+		"host": "localhost:10000",
+		"props": {
+			
+		}
+	}
+]

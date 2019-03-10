@@ -1,0 +1,14 @@
+{
+	"valids": [
+		{
+			"name": "session",
+			"uris": [
+				"app://session:way"
+			],
+			"props": {
+				
+			}
+		}
+	],
+	"invalids": []
+}

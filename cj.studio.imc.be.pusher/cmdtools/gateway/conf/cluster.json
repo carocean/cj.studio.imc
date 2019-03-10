@@ -1,0 +1,14 @@
+{
+	"valids": [
+		{
+			"name": "pusher",
+			"uris": [
+				"app://pusher:way"
+			],
+			"props": {
+				
+			}
+		}
+	],
+	"invalids": []
+}

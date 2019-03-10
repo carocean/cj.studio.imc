@@ -1,0 +1,4 @@
+include "cj.studio.imc.be.session.program"
+include "cj.studio.imc.be.session.main"
+include "cj.studio.imc.be.session.plugin"
+include "cj.studio.imc.be.session.stub"
