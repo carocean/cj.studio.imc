@@ -16,7 +16,7 @@ import cj.studio.ecm.IAssembly;
 import cj.studio.ecm.adapter.IActuator;
 import cj.studio.ecm.adapter.IAdaptable;
 
-public class Main {
+public class FeChannelMain {
 
 
 	private static String fileName;

@@ -6,7 +6,7 @@
 	entryPoint : {
 		plugins:[
 			{
-				name:"mongodb",
+				name:"redis",
 				class:"cj.studio.orm.mongodb.MongoDBPlugin",
 				parameters:{
 					remotes:"[
