@@ -5,22 +5,13 @@
 {
 	entryPoint : {
 		plugins:[
-			{
-				name:"mongodb",
-				class:"cj.studio.orm.mongodb.MongoDBPlugin",
-				parameters:{
-					remotes:"[
-						'localhost:27017'
-					]"
-				}
-			}
 		],		
 		activators : [
 			
 		]
 	},
 	assemblyInfo : {
-		assemblyTitle : "router.plugin",
+		assemblyTitle : "router@plugin",
 		assemblyResource:"site=/site;http.root=$(site)/web;http.jss=$(site)/jss/http;ws.jss=$(site)/jss/ws",
 		assemblyDescription : "cj工作室出品，netos平台制造",
 		assemblyConfiguration : "",
@@ -48,7 +39,7 @@
 			extName:".jss.js"
 		}],
 		scans : [{
-					package : "cj.studio.orm.mongodb",
+					package : "cj.studio.gateway.stub",
 					extName : ".class|.json|.xml",
 					exoterical:"true"
 				},{

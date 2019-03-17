@@ -1,10 +1,10 @@
 [
 	{
-		"name": "httpSite",
-		"protocol": "http",
+		"name": "tcpSite",
+		"protocol": "tcp",
 		"host": "localhost:10004",
 		"props": {
-			
+			"OnChannelEvent-Notify-Dests":"router"
 		}
 	}
 ]

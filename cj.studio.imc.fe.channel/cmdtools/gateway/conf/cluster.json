@@ -16,6 +16,14 @@
 			"props": {
 				
 			}
+		},{
+			"name": "/backend/router/",
+			"uris": [
+				"tcp://localhost:10004"
+			],
+			"props": {
+				
+			}
 		}
 	],
 	"invalids": []
