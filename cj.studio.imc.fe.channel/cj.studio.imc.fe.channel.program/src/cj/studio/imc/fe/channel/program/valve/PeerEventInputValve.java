@@ -10,6 +10,7 @@ import cj.studio.gateway.socket.pipeline.IIPipeline;
 import cj.studio.gateway.socket.util.SocketContants;
 import cj.studio.gateway.stub.IRest;
 import cj.studio.imc.be.router.args.DeviceInfo;
+import cj.studio.imc.be.router.args.UserInfo;
 import cj.studio.imc.be.router.stub.IPeerEventStub;
 import cj.ultimate.gson2.com.google.gson.Gson;
 
@@ -28,13 +29,23 @@ public class PeerEventInputValve implements IAnnotationInputValve {
 	@Override
 	public void flow(Object request, Object response, IIPipeline pipeline) throws CircuitException {
 		Frame f = (Frame) request;
-		if ("PEER/1.0".equals(f.protocol()) && "onDevice".equals(f.command())) {
-			if (f.content().revcievedBytes() <= 0) {
-				throw new CircuitException("404", "未提交设备信息");
-			}
+		if ("PEER/1.0".equals(f.protocol())) {
 			IPeerEventStub peer = rest.forRemote("/backend/router/").open(IPeerEventStub.class, true);
-			DeviceInfo device = new Gson().fromJson(new String(f.content().readFully()), DeviceInfo.class);
-			peer.onDevice(f.head(SocketContants.__frame_fromPipelineName), device);
+			switch(f.command()) {
+			case "onDevice":
+				if (f.content().revcievedBytes() <= 0) {
+					throw new CircuitException("404", "未提交设备信息");
+				}
+				DeviceInfo device = new Gson().fromJson(new String(f.content().readFully()), DeviceInfo.class);
+				peer.onDevice(f.head(SocketContants.__frame_fromPipelineName), device);
+				break;
+			case "onUser":
+				String principals=f.head("UC-Principals");
+				String subject=f.head("UC-Subject");
+				UserInfo user=new UserInfo(principals,subject);
+				peer.onUser(f.head(SocketContants.__frame_fromPipelineName), user);
+				break;
+			}
 			return;
 		}
 		pipeline.nextFlow(request, response, this);

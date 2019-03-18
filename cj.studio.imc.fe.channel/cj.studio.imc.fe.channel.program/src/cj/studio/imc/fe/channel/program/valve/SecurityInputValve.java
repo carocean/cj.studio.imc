@@ -40,6 +40,7 @@ public class SecurityInputValve implements IAnnotationInputValve {
 			}
 			Map<String, Object> map = token.parse(cjtoken);
 			f.head("UC-Principals", (String) map.get("user"));
+			f.head("UC-Subject", (String) map.get("sub"));
 			pipeline.nextFlow(request, response, this);
 			return;
 		}
