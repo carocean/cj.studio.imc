@@ -21,13 +21,20 @@ public class PeerEventService implements IPeerEventService {
 
 	@Override
 	public void onDevice(String path, DeviceInfo device) {
-		// TODO Auto-generated method stub
-
+		cj.studio.imc.be.online.args.DeviceInfo d = new cj.studio.imc.be.online.args.DeviceInfo();
+		d.setDesc(device.getDesc());
+		d.setDisplayName(device.getDisplayName());
+		d.setUuid(device.getUuid());
+		d.setVersion(device.getVersion());
+		online.onDevice(path, d);
 	}
 
 	@Override
 	public void onUser(String path, UserInfo user) {
-		// TODO Auto-generated method stub
+		cj.studio.imc.be.online.args.UserInfo d = new cj.studio.imc.be.online.args.UserInfo();
+		d.setAppCode(user.getAppCode());
+		d.setUserCode(user.getUserCode());
+		online.onUser(path, d);
 
 	}
 
@@ -38,14 +45,15 @@ public class PeerEventService implements IPeerEventService {
 
 	@Override
 	public void offDevice(String uuid) {
-		// TODO Auto-generated method stub
-
+		online.offDevice(uuid);
 	}
 
 	@Override
 	public void offUser(UserInfo user) {
-		// TODO Auto-generated method stub
-
+		cj.studio.imc.be.online.args.UserInfo d = new cj.studio.imc.be.online.args.UserInfo();
+		d.setAppCode(user.getAppCode());
+		d.setUserCode(user.getUserCode());
+		online.offUser(d);
 	}
 
 }

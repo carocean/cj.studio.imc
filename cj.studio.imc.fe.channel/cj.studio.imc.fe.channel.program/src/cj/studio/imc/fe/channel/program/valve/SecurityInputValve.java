@@ -39,7 +39,7 @@ public class SecurityInputValve implements IAnnotationInputValve {
 				throw new CircuitException("801", "拒绝服务。cjtoken为空！");
 			}
 			Map<String, Object> map = token.parse(cjtoken);
-			f.head("UC-Principals",(String)map.get("user"));
+			f.head("UC-Principals", (String) map.get("user"));
 			pipeline.nextFlow(request, response, this);
 			return;
 		}
