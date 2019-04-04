@@ -403,3 +403,341 @@
 2019年03月18日 21:54:06  信息 : 已装载共享库/Users/caroceanjofers/studio/github/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
 2019年03月18日 22:23:10  信息 : -------------网关启动完毕-------------------
 2019年03月18日 22:23:17  信息 : 已装载共享库/Users/caroceanjofers/studio/github/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月03日 13:54:20  信息 : -------------网关启动完毕-------------------
+2019年04月03日 14:12:14  信息 : -------------网关启动完毕-------------------
+2019年04月03日 17:03:35  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月03日 17:03:37  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月03日 17:11:13  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月03日 17:11:13  信息 : -------------网关启动完毕-------------------
+2019年04月03日 17:12:09  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月03日 17:12:10  警告: cj.studio.gateway.socket.cable.wire.TcpGatewaySocketWire$TcpClientHandler - 客户端：/backend/router/ 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的连接串中指定参数：OnChannelEvent-Notify-Dests=dest1,dest2
+2019年04月03日 17:16:49  信息: cj.studio.gateway.mic.MicConnector - 正在重连mic...
+2019年04月03日 17:16:49  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月03日 18:01:40  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月03日 18:01:40  信息 : -------------网关启动完毕-------------------
+2019年04月03日 18:02:07  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月03日 18:02:07  错误: cj.studio.gateway.socket.pipeline.OutputSelector -  异常：505 java.net.ConnectException: Connection refused: localhost/127.0.0.1:10004
+		at cj.studio.gateway.socket.cable.wire.TcpGatewaySocketWire.connect(TcpGatewaySocketWire.java:158)
+		at cj.studio.gateway.socket.cable.GatewaySocketCable.onconnect(GatewaySocketCable.java:227)
+		at cj.studio.gateway.socket.cable.GatewaySocketCable.connect(GatewaySocketCable.java:220)
+		at cj.studio.gateway.socket.client.ClientGatewaySocket.connect(ClientGatewaySocket.java:113)
+		at cj.studio.gateway.DestinationLoader.load(DestinationLoader.java:49)
+		at cj.studio.gateway.GatewaySocketContainer.getAndCreate(GatewaySocketContainer.java:36)
+		at cj.studio.gateway.socket.app.valve.LastWayOutputValve.onActive(LastWayOutputValve.java:45)
+		at cj.studio.gateway.socket.pipeline.OutputPipeline.nextOnActive(OutputPipeline.java:104)
+		at cj.studio.gateway.socket.app.valve.FirstWayOutputValve.onActive(FirstWayOutputValve.java:16)
+		at cj.studio.gateway.socket.pipeline.OutputPipeline.nextOnActive(OutputPipeline.java:98)
+		at cj.studio.gateway.socket.pipeline.OutputPipeline.headOnActive(OutputPipeline.java:86)
+		at cj.studio.gateway.socket.pipeline.OutputSelector.select(OutputSelector.java:32)
+		at cj.studio.gateway.stub.AsyncInvocationHandler.invoke(AsyncInvocationHandler.java:88)
+		at cj.studio.imc.be.router.stub.IPeerEventStub$$EnhancerByCGLIB$$110c97f2.onTerminus(<generated>:-1)
+		at cj.studio.imc.fe.channel.program.valve.PeerEventInputValve.onActive(PeerEventInputValve.java:25)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnActive(InputPipeline.java:191)
+		at cj.studio.imc.fe.channel.program.valve.SecurityInputValve.onActive(SecurityInputValve.java:24)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnActive(InputPipeline.java:191)
+		at cj.studio.imc.fe.channel.program.valve.UrlDecodeInputValve.onActive(UrlDecodeInputValve.java:19)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnActive(InputPipeline.java:191)
+		at cj.studio.gateway.socket.app.valve.CheckSessionInputValve.onActive(CheckSessionInputValve.java:37)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnActive(InputPipeline.java:191)
+		at cj.studio.gateway.socket.app.valve.CheckErrorInputVavle.onActive(CheckErrorInputVavle.java:31)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnActive(InputPipeline.java:191)
+		at cj.studio.gateway.socket.app.valve.CheckUrlInputValve.onActive(CheckUrlInputValve.java:16)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnActive(InputPipeline.java:191)
+		at cj.studio.gateway.socket.app.valve.FirstWayInputValve.onActive(FirstWayInputValve.java:13)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnActive(InputPipeline.java:185)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.headOnActive(InputPipeline.java:173)
+		at cj.studio.gateway.server.handler.WebsocketChannelHandler.pipelineBuild(WebsocketChannelHandler.java:179)
+		at cj.studio.gateway.server.handler.WebsocketChannelHandler.channelActive(WebsocketChannelHandler.java:228)
+		at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelActiveNow(ChannelHandlerInvokerUtil.java:38)
+		at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelActive(DefaultChannelHandlerInvoker.java:63)
+		at io.netty.channel.DefaultChannelHandlerContext.fireChannelActive(DefaultChannelHandlerContext.java:292)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelActive(DefaultChannelPipeline.java:816)
+		at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:429)
+		at io.netty.channel.AbstractChannel$AbstractUnsafe.access$100(AbstractChannel.java:369)
+		at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:403)
+		at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:318)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:353)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+		at java.lang.Thread.run(Thread.java:748)
+	Cause by:
+		at sun.nio.ch.SocketChannelImpl.checkConnect(SocketChannelImpl.java:-2)
+		at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+		at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:191)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:241)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:502)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+		at java.lang.Thread.run(Thread.java:748)
+2019年04月03日 18:02:07  错误: cj.studio.gateway.socket.pipeline.OutputSelector -  异常：505 java.net.ConnectException: Connection refused: localhost/127.0.0.1:10004
+		at cj.studio.gateway.socket.cable.wire.TcpGatewaySocketWire.connect(TcpGatewaySocketWire.java:158)
+		at cj.studio.gateway.socket.cable.GatewaySocketCable.onconnect(GatewaySocketCable.java:227)
+		at cj.studio.gateway.socket.cable.GatewaySocketCable.connect(GatewaySocketCable.java:220)
+		at cj.studio.gateway.socket.client.ClientGatewaySocket.connect(ClientGatewaySocket.java:113)
+		at cj.studio.gateway.DestinationLoader.load(DestinationLoader.java:49)
+		at cj.studio.gateway.GatewaySocketContainer.getAndCreate(GatewaySocketContainer.java:36)
+		at cj.studio.gateway.socket.app.valve.LastWayOutputValve.onActive(LastWayOutputValve.java:45)
+		at cj.studio.gateway.socket.pipeline.OutputPipeline.nextOnActive(OutputPipeline.java:104)
+		at cj.studio.gateway.socket.app.valve.FirstWayOutputValve.onActive(FirstWayOutputValve.java:16)
+		at cj.studio.gateway.socket.pipeline.OutputPipeline.nextOnActive(OutputPipeline.java:98)
+		at cj.studio.gateway.socket.pipeline.OutputPipeline.headOnActive(OutputPipeline.java:86)
+		at cj.studio.gateway.socket.pipeline.OutputSelector.select(OutputSelector.java:32)
+		at cj.studio.gateway.stub.AsyncInvocationHandler.invoke(AsyncInvocationHandler.java:88)
+		at cj.studio.imc.be.router.stub.IPeerEventStub$$EnhancerByCGLIB$$110c97f2.offTerminus(<generated>:-1)
+		at cj.studio.imc.fe.channel.program.valve.PeerEventInputValve.onInactive(PeerEventInputValve.java:57)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnInactive(InputPipeline.java:204)
+		at cj.studio.imc.fe.channel.program.valve.SecurityInputValve.onInactive(SecurityInputValve.java:52)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnInactive(InputPipeline.java:204)
+		at cj.studio.imc.fe.channel.program.valve.UrlDecodeInputValve.onInactive(UrlDecodeInputValve.java:38)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnInactive(InputPipeline.java:204)
+		at cj.studio.gateway.socket.app.valve.CheckSessionInputValve.onInactive(CheckSessionInputValve.java:75)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnInactive(InputPipeline.java:204)
+		at cj.studio.gateway.socket.app.valve.CheckErrorInputVavle.onInactive(CheckErrorInputVavle.java:76)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnInactive(InputPipeline.java:204)
+		at cj.studio.gateway.socket.app.valve.CheckUrlInputValve.onInactive(CheckUrlInputValve.java:49)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnInactive(InputPipeline.java:204)
+		at cj.studio.gateway.socket.app.valve.FirstWayInputValve.onInactive(FirstWayInputValve.java:18)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnInactive(InputPipeline.java:198)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.headOnInactive(InputPipeline.java:178)
+		at cj.studio.gateway.server.handler.WebsocketChannelHandler.pipelineRelease(WebsocketChannelHandler.java:207)
+		at cj.studio.gateway.server.handler.WebsocketChannelHandler.channelInactive(WebsocketChannelHandler.java:235)
+		at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelInactiveNow(ChannelHandlerInvokerUtil.java:46)
+		at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelInactive(DefaultChannelHandlerInvoker.java:77)
+		at io.netty.channel.DefaultChannelHandlerContext.fireChannelInactive(DefaultChannelHandlerContext.java:299)
+		at io.netty.channel.ChannelHandlerAdapter.channelInactive(ChannelHandlerAdapter.java:100)
+		at io.netty.handler.codec.http.HttpObjectAggregator.channelInactive(HttpObjectAggregator.java:226)
+		at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelInactiveNow(ChannelHandlerInvokerUtil.java:46)
+		at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelInactive(DefaultChannelHandlerInvoker.java:77)
+		at io.netty.channel.DefaultChannelHandlerContext.fireChannelInactive(DefaultChannelHandlerContext.java:299)
+		at io.netty.handler.codec.ReplayingDecoder.channelInactive(ReplayingDecoder.java:347)
+		at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelInactiveNow(ChannelHandlerInvokerUtil.java:46)
+		at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelInactive(DefaultChannelHandlerInvoker.java:77)
+		at io.netty.channel.DefaultChannelHandlerContext.fireChannelInactive(DefaultChannelHandlerContext.java:299)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:827)
+		at io.netty.channel.AbstractChannel$AbstractUnsafe$5.run(AbstractChannel.java:544)
+		at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:318)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:353)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+		at java.lang.Thread.run(Thread.java:748)
+	Cause by:
+		at sun.nio.ch.SocketChannelImpl.checkConnect(SocketChannelImpl.java:-2)
+		at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+		at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:191)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:241)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:502)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+		at java.lang.Thread.run(Thread.java:748)
+2019年04月03日 18:02:14  错误: cj.studio.gateway.socket.pipeline.OutputSelector -  异常：505 java.net.ConnectException: Connection refused: localhost/127.0.0.1:10004
+		at cj.studio.gateway.socket.cable.wire.TcpGatewaySocketWire.connect(TcpGatewaySocketWire.java:158)
+		at cj.studio.gateway.socket.cable.GatewaySocketCable.onconnect(GatewaySocketCable.java:227)
+		at cj.studio.gateway.socket.cable.GatewaySocketCable.connect(GatewaySocketCable.java:220)
+		at cj.studio.gateway.socket.client.ClientGatewaySocket.connect(ClientGatewaySocket.java:113)
+		at cj.studio.gateway.DestinationLoader.load(DestinationLoader.java:49)
+		at cj.studio.gateway.GatewaySocketContainer.getAndCreate(GatewaySocketContainer.java:36)
+		at cj.studio.gateway.socket.app.valve.LastWayOutputValve.onActive(LastWayOutputValve.java:45)
+		at cj.studio.gateway.socket.pipeline.OutputPipeline.nextOnActive(OutputPipeline.java:104)
+		at cj.studio.gateway.socket.app.valve.FirstWayOutputValve.onActive(FirstWayOutputValve.java:16)
+		at cj.studio.gateway.socket.pipeline.OutputPipeline.nextOnActive(OutputPipeline.java:98)
+		at cj.studio.gateway.socket.pipeline.OutputPipeline.headOnActive(OutputPipeline.java:86)
+		at cj.studio.gateway.socket.pipeline.OutputSelector.select(OutputSelector.java:32)
+		at cj.studio.gateway.stub.AsyncInvocationHandler.invoke(AsyncInvocationHandler.java:88)
+		at cj.studio.imc.be.router.stub.IPeerEventStub$$EnhancerByCGLIB$$110c97f2.onTerminus(<generated>:-1)
+		at cj.studio.imc.fe.channel.program.valve.PeerEventInputValve.onActive(PeerEventInputValve.java:25)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnActive(InputPipeline.java:191)
+		at cj.studio.imc.fe.channel.program.valve.SecurityInputValve.onActive(SecurityInputValve.java:24)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnActive(InputPipeline.java:191)
+		at cj.studio.imc.fe.channel.program.valve.UrlDecodeInputValve.onActive(UrlDecodeInputValve.java:19)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnActive(InputPipeline.java:191)
+		at cj.studio.gateway.socket.app.valve.CheckSessionInputValve.onActive(CheckSessionInputValve.java:37)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnActive(InputPipeline.java:191)
+		at cj.studio.gateway.socket.app.valve.CheckErrorInputVavle.onActive(CheckErrorInputVavle.java:31)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnActive(InputPipeline.java:191)
+		at cj.studio.gateway.socket.app.valve.CheckUrlInputValve.onActive(CheckUrlInputValve.java:16)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnActive(InputPipeline.java:191)
+		at cj.studio.gateway.socket.app.valve.FirstWayInputValve.onActive(FirstWayInputValve.java:13)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnActive(InputPipeline.java:185)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.headOnActive(InputPipeline.java:173)
+		at cj.studio.gateway.server.handler.WebsocketChannelHandler.pipelineBuild(WebsocketChannelHandler.java:179)
+		at cj.studio.gateway.server.handler.WebsocketChannelHandler.channelActive(WebsocketChannelHandler.java:228)
+		at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelActiveNow(ChannelHandlerInvokerUtil.java:38)
+		at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelActive(DefaultChannelHandlerInvoker.java:63)
+		at io.netty.channel.DefaultChannelHandlerContext.fireChannelActive(DefaultChannelHandlerContext.java:292)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelActive(DefaultChannelPipeline.java:816)
+		at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:429)
+		at io.netty.channel.AbstractChannel$AbstractUnsafe.access$100(AbstractChannel.java:369)
+		at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:403)
+		at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:318)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:353)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+		at java.lang.Thread.run(Thread.java:748)
+	Cause by:
+		at sun.nio.ch.SocketChannelImpl.checkConnect(SocketChannelImpl.java:-2)
+		at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+		at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:191)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:241)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:502)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+		at java.lang.Thread.run(Thread.java:748)
+2019年04月03日 18:02:14  错误: cj.studio.gateway.socket.pipeline.OutputSelector -  异常：505 java.net.ConnectException: Connection refused: localhost/127.0.0.1:10004
+		at cj.studio.gateway.socket.cable.wire.TcpGatewaySocketWire.connect(TcpGatewaySocketWire.java:158)
+		at cj.studio.gateway.socket.cable.GatewaySocketCable.onconnect(GatewaySocketCable.java:227)
+		at cj.studio.gateway.socket.cable.GatewaySocketCable.connect(GatewaySocketCable.java:220)
+		at cj.studio.gateway.socket.client.ClientGatewaySocket.connect(ClientGatewaySocket.java:113)
+		at cj.studio.gateway.DestinationLoader.load(DestinationLoader.java:49)
+		at cj.studio.gateway.GatewaySocketContainer.getAndCreate(GatewaySocketContainer.java:36)
+		at cj.studio.gateway.socket.app.valve.LastWayOutputValve.onActive(LastWayOutputValve.java:45)
+		at cj.studio.gateway.socket.pipeline.OutputPipeline.nextOnActive(OutputPipeline.java:104)
+		at cj.studio.gateway.socket.app.valve.FirstWayOutputValve.onActive(FirstWayOutputValve.java:16)
+		at cj.studio.gateway.socket.pipeline.OutputPipeline.nextOnActive(OutputPipeline.java:98)
+		at cj.studio.gateway.socket.pipeline.OutputPipeline.headOnActive(OutputPipeline.java:86)
+		at cj.studio.gateway.socket.pipeline.OutputSelector.select(OutputSelector.java:32)
+		at cj.studio.gateway.stub.AsyncInvocationHandler.invoke(AsyncInvocationHandler.java:88)
+		at cj.studio.imc.be.router.stub.IPeerEventStub$$EnhancerByCGLIB$$110c97f2.offTerminus(<generated>:-1)
+		at cj.studio.imc.fe.channel.program.valve.PeerEventInputValve.onInactive(PeerEventInputValve.java:57)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnInactive(InputPipeline.java:204)
+		at cj.studio.imc.fe.channel.program.valve.SecurityInputValve.onInactive(SecurityInputValve.java:52)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnInactive(InputPipeline.java:204)
+		at cj.studio.imc.fe.channel.program.valve.UrlDecodeInputValve.onInactive(UrlDecodeInputValve.java:38)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnInactive(InputPipeline.java:204)
+		at cj.studio.gateway.socket.app.valve.CheckSessionInputValve.onInactive(CheckSessionInputValve.java:75)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnInactive(InputPipeline.java:204)
+		at cj.studio.gateway.socket.app.valve.CheckErrorInputVavle.onInactive(CheckErrorInputVavle.java:76)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnInactive(InputPipeline.java:204)
+		at cj.studio.gateway.socket.app.valve.CheckUrlInputValve.onInactive(CheckUrlInputValve.java:49)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnInactive(InputPipeline.java:204)
+		at cj.studio.gateway.socket.app.valve.FirstWayInputValve.onInactive(FirstWayInputValve.java:18)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.nextOnInactive(InputPipeline.java:198)
+		at cj.studio.gateway.socket.pipeline.InputPipeline.headOnInactive(InputPipeline.java:178)
+		at cj.studio.gateway.server.handler.WebsocketChannelHandler.pipelineRelease(WebsocketChannelHandler.java:207)
+		at cj.studio.gateway.server.handler.WebsocketChannelHandler.channelInactive(WebsocketChannelHandler.java:235)
+		at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelInactiveNow(ChannelHandlerInvokerUtil.java:46)
+		at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelInactive(DefaultChannelHandlerInvoker.java:77)
+		at io.netty.channel.DefaultChannelHandlerContext.fireChannelInactive(DefaultChannelHandlerContext.java:299)
+		at io.netty.channel.ChannelHandlerAdapter.channelInactive(ChannelHandlerAdapter.java:100)
+		at io.netty.handler.codec.http.HttpObjectAggregator.channelInactive(HttpObjectAggregator.java:226)
+		at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelInactiveNow(ChannelHandlerInvokerUtil.java:46)
+		at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelInactive(DefaultChannelHandlerInvoker.java:77)
+		at io.netty.channel.DefaultChannelHandlerContext.fireChannelInactive(DefaultChannelHandlerContext.java:299)
+		at io.netty.handler.codec.ReplayingDecoder.channelInactive(ReplayingDecoder.java:347)
+		at io.netty.channel.ChannelHandlerInvokerUtil.invokeChannelInactiveNow(ChannelHandlerInvokerUtil.java:46)
+		at io.netty.channel.DefaultChannelHandlerInvoker.invokeChannelInactive(DefaultChannelHandlerInvoker.java:77)
+		at io.netty.channel.DefaultChannelHandlerContext.fireChannelInactive(DefaultChannelHandlerContext.java:299)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:827)
+		at io.netty.channel.AbstractChannel$AbstractUnsafe$5.run(AbstractChannel.java:544)
+		at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:318)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:353)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+		at java.lang.Thread.run(Thread.java:748)
+	Cause by:
+		at sun.nio.ch.SocketChannelImpl.checkConnect(SocketChannelImpl.java:-2)
+		at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+		at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:191)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:241)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:502)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794)
+		at java.lang.Thread.run(Thread.java:748)
+2019年04月03日 18:03:53  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月03日 18:03:53  信息 : -------------网关启动完毕-------------------
+2019年04月03日 18:04:02  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月03日 18:04:02  警告: cj.studio.gateway.socket.cable.wire.TcpGatewaySocketWire$TcpClientHandler - 客户端：/backend/router/ 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的连接串中指定参数：OnChannelEvent-Notify-Dests=dest1,dest2
+2019年04月03日 18:06:54  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月03日 18:06:54  信息 : -------------网关启动完毕-------------------
+2019年04月03日 18:06:57  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月03日 18:07:33  警告: cj.studio.gateway.socket.cable.wire.TcpGatewaySocketWire$TcpClientHandler - 客户端：/backend/router/ 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的连接串中指定参数：OnChannelEvent-Notify-Dests=dest1,dest2
+2019年04月03日 20:37:19  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月03日 20:37:19  信息 : -------------网关启动完毕-------------------
+2019年04月03日 20:37:31  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月03日 20:37:47  警告: cj.studio.gateway.socket.cable.wire.TcpGatewaySocketWire$TcpClientHandler - 客户端：/backend/router/ 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的连接串中指定参数：OnChannelEvent-Notify-Dests=dest1,dest2
+2019年04月03日 20:44:43  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月03日 20:44:43  信息 : -------------网关启动完毕-------------------
+2019年04月03日 20:44:55  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月03日 20:44:55  警告: cj.studio.gateway.socket.cable.wire.TcpGatewaySocketWire$TcpClientHandler - 客户端：/backend/router/ 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的连接串中指定参数：OnChannelEvent-Notify-Dests=dest1,dest2
+2019年04月03日 20:48:29  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月03日 20:48:29  信息 : -------------网关启动完毕-------------------
+2019年04月03日 20:48:51  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月03日 20:48:51  信息 : -------------网关启动完毕-------------------
+2019年04月03日 20:49:06  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月03日 20:49:14  警告: cj.studio.gateway.socket.cable.wire.TcpGatewaySocketWire$TcpClientHandler - 客户端：/backend/router/ 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的连接串中指定参数：OnChannelEvent-Notify-Dests=dest1,dest2
+2019年04月03日 23:23:11  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月03日 23:23:11  信息 : -------------网关启动完毕-------------------
+2019年04月03日 23:23:29  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月03日 23:23:29  警告: cj.studio.gateway.socket.cable.wire.TcpGatewaySocketWire$TcpClientHandler - 客户端：/backend/router/ 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的连接串中指定参数：OnChannelEvent-Notify-Dests=dest1,dest2
+2019年04月03日 23:50:04  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月03日 23:50:04  信息 : -------------网关启动完毕-------------------
+2019年04月03日 23:50:14  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月03日 23:52:09  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月03日 23:52:09  信息 : -------------网关启动完毕-------------------
+2019年04月03日 23:52:11  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月03日 23:55:24  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月03日 23:55:24  信息 : -------------网关启动完毕-------------------
+2019年04月03日 23:55:26  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月04日 00:43:56  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月04日 00:43:56  信息 : -------------网关启动完毕-------------------
+2019年04月04日 00:44:04  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月04日 00:46:24  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月04日 00:46:24  信息 : -------------网关启动完毕-------------------
+2019年04月04日 00:46:27  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月04日 00:47:23  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月04日 00:47:23  信息 : -------------网关启动完毕-------------------
+2019年04月04日 00:47:30  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月04日 00:53:42  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月04日 00:53:42  信息 : -------------网关启动完毕-------------------
+2019年04月04日 00:53:45  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月04日 00:53:45  警告: cj.studio.gateway.socket.cable.wire.TcpGatewaySocketWire$TcpClientHandler - 客户端：/backend/router/ 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的连接串中指定参数：OnChannelEvent-Notify-Dests=dest1,dest2
+2019年04月04日 00:54:53  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月04日 00:54:53  信息 : -------------网关启动完毕-------------------
+2019年04月04日 00:55:00  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月04日 00:55:00  警告: cj.studio.gateway.socket.cable.wire.TcpGatewaySocketWire$TcpClientHandler - 客户端：/backend/router/ 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的连接串中指定参数：OnChannelEvent-Notify-Dests=dest1,dest2
+2019年04月04日 01:03:24  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月04日 01:03:24  信息 : -------------网关启动完毕-------------------
+2019年04月04日 01:03:28  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月04日 01:03:28  警告: cj.studio.gateway.socket.cable.wire.TcpGatewaySocketWire$TcpClientHandler - 客户端：/backend/router/ 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的连接串中指定参数：OnChannelEvent-Notify-Dests=dest1,dest2
+2019年04月04日 01:04:33  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月04日 01:06:26  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月04日 01:06:26  信息 : -------------网关启动完毕-------------------
+2019年04月04日 01:06:30  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月04日 01:06:30  警告: cj.studio.gateway.socket.cable.wire.TcpGatewaySocketWire$TcpClientHandler - 客户端：/backend/router/ 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的连接串中指定参数：OnChannelEvent-Notify-Dests=dest1,dest2
+2019年04月04日 01:08:41  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月04日 01:08:41  信息 : -------------网关启动完毕-------------------
+2019年04月04日 01:08:44  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月04日 01:08:47  警告: cj.studio.gateway.socket.cable.wire.TcpGatewaySocketWire$TcpClientHandler - 客户端：/backend/router/ 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的连接串中指定参数：OnChannelEvent-Notify-Dests=dest1,dest2
+2019年04月04日 01:11:00  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月04日 01:11:00  信息 : -------------网关启动完毕-------------------
+2019年04月04日 01:11:03  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月04日 01:11:06  警告: cj.studio.gateway.socket.cable.wire.TcpGatewaySocketWire$TcpClientHandler - 客户端：/backend/router/ 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的连接串中指定参数：OnChannelEvent-Notify-Dests=dest1,dest2
+2019年04月04日 01:12:14  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月04日 01:12:14  信息 : -------------网关启动完毕-------------------
+2019年04月04日 01:12:21  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月04日 01:12:21  警告: cj.studio.gateway.socket.cable.wire.TcpGatewaySocketWire$TcpClientHandler - 客户端：/backend/router/ 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的连接串中指定参数：OnChannelEvent-Notify-Dests=dest1,dest2
+2019年04月04日 01:18:10  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月04日 01:18:10  信息 : -------------网关启动完毕-------------------
+2019年04月04日 01:18:13  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月04日 01:18:13  警告: cj.studio.gateway.socket.cable.wire.TcpGatewaySocketWire$TcpClientHandler - 客户端：/backend/router/ 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的连接串中指定参数：OnChannelEvent-Notify-Dests=dest1,dest2
+2019年04月04日 01:19:09  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月04日 01:21:20  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月04日 01:21:20  信息 : -------------网关启动完毕-------------------
+2019年04月04日 01:21:29  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月04日 01:21:29  警告: cj.studio.gateway.socket.cable.wire.TcpGatewaySocketWire$TcpClientHandler - 客户端：/backend/router/ 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的连接串中指定参数：OnChannelEvent-Notify-Dests=dest1,dest2
+2019年04月04日 01:23:56  信息: cj.studio.gateway.mic.MicConnector - 正在重连mic...
+2019年04月04日 01:24:52  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月04日 01:24:52  信息 : -------------网关启动完毕-------------------
+2019年04月04日 01:25:33  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月04日 01:25:33  警告: cj.studio.gateway.socket.cable.wire.TcpGatewaySocketWire$TcpClientHandler - 客户端：/backend/router/ 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的连接串中指定参数：OnChannelEvent-Notify-Dests=dest1,dest2
+2019年04月04日 01:26:01  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月04日 01:26:41  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月04日 01:28:52  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月04日 01:34:55  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月04日 01:34:55  信息 : -------------网关启动完毕-------------------
+2019年04月04日 01:35:01  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月04日 01:35:01  警告: cj.studio.gateway.socket.cable.wire.TcpGatewaySocketWire$TcpClientHandler - 客户端：/backend/router/ 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的连接串中指定参数：OnChannelEvent-Notify-Dests=dest1,dest2
+2019年04月04日 01:38:22  信息: cj.studio.gateway.mic.MicConnector - 注册mic成功。host tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/,location /infrastructurePlatform/imc/
+2019年04月04日 01:38:22  信息 : -------------网关启动完毕-------------------
+2019年04月04日 01:38:51  信息 : 已装载共享库/Users/caroceanjofers/studio/cj.studio.imc/cj.studio.imc.fe.channel/cmdtools/gateway/lib/share
+2019年04月04日 01:38:51  警告: cj.studio.gateway.socket.cable.wire.TcpGatewaySocketWire$TcpClientHandler - 客户端：/backend/router/ 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的连接串中指定参数：OnChannelEvent-Notify-Dests=dest1,dest2
+2019年04月04日 01:40:33  警告: cj.studio.gateway.socket.cable.wire.TcpGatewaySocketWire$TcpClientHandler - 客户端：/backend/router/ 未指定通道激活或失活事件的通知目标。应用仅能在之后第一次请求时才能收到激活或失活事件。请在该net的连接串中指定参数：OnChannelEvent-Notify-Dests=dest1,dest2

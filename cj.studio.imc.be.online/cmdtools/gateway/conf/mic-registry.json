@@ -1,0 +1,13 @@
+{
+	"guid":"7DE76F7E-7234-4262-A33B-DEA13372A780",
+	"title":"cj.studio.imc.be.online",
+	"enabled":true,
+	"desc":"即时通讯中心/在线中心.中台",
+	"mic":{
+		"location":"/infrastructurePlatform/imc/",
+		"host":"tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/",
+		"reconnDelay":6000,
+		"reconnPeriod":15000,
+		"cjtoken":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjaiIsInBhc3N3b3JkIjoiMTEiLCJleHAiOjExNzQ2OTMwMzIwNjUsInVzZXIiOiJjaiIsImlhdCI6MTU1MzgzMjA2NSwianRpIjoiY2Q2MWQwYmEtNDhjMy00NzNkLTlkYTMtMDBlZGFlYzFkNDc2In0.1Yq4mMYTYO0nzeWSpg2wJhgUtK-e2tdKf1f3fM3mh0Q"
+	}
+}

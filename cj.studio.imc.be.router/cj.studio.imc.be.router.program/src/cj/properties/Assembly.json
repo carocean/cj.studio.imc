@@ -8,6 +8,13 @@
 			
 		],		
 		activators : [
+			{
+			name:'清理本节点在线列表',
+			class:'cj.studio.imc.be.router.program.EmptyPeerOnlineActivator',
+			parameters:{
+					name:'xxxx'
+				}
+			}
 		]
 	},
 	assemblyInfo : {

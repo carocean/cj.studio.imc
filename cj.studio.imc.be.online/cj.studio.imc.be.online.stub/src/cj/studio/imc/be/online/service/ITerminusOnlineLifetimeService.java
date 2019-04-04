@@ -7,7 +7,7 @@ import cj.studio.imc.be.online.args.TerminusOnlineLifetime;
 import cj.studio.imc.be.online.args.UserInfo;
 
 public interface ITerminusOnlineLifetimeService {
-	void onTerminus(String path);
+	void onTerminus(String path, String peerOnMicNode,String routerOnMicNode);
 
 	void onDevice(String path, DeviceInfo device);
 
@@ -30,4 +30,8 @@ public interface ITerminusOnlineLifetimeService {
 	long onlineUserCount();
 
 	long onlineTerminusCount();
+
+	void emtpyPeerOnline(String peerOnMicNode);
+
+	void emtpyRouterOnline(String routerOnMicNode);
 }

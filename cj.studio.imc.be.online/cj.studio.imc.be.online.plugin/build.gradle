@@ -19,17 +19,29 @@ sourceSets {
 
 dependencies {
 	compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
+	compile group: 'cj.studio.gateway2', name: 'cj.studio.orm.mongodb', version: ref_cj_studio_orm_mongodb_version
 	compile project(':cj.studio.imc.be.online.stub');
 	compile fileTree('../global/runtime')
 	compile fileTree('../global/cjtools')
 	compile fileTree('src/cj/refembeds')
 	compile fileTree('src/cj/references')
 }
+task copyRefembeds(type: Copy) {
+    into 'src/cj/refembeds'
+    from(configurations.all) {
+        include 'cj.studio.orm.mongodb-*.jar'
+        //下面在执行uploadArchives方法时只执行删除缺不拷贝，因此注释掉
+       // delete fileTree("src/cj/refembeds").matching {
+       // 	include "cj.studio.gateway.stub-*.jar"
+    	//}
+    }
+}
 task releaseToHost(type: Copy) {
- dependsOn "build"
+ dependsOn 'copyRefembeds',"build"
  from 'build/libs/'
 into '../cmdtools/gateway/assemblies/online/plugins/online.plugin-1.0'
  include '**/*.jar'
+ exclude '**/*-javadoc.jar','**/*-sources.jar'
  }
  
  task release(type:Copy){

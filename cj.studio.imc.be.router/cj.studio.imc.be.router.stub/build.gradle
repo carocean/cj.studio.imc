@@ -19,9 +19,6 @@ sourceSets {
 
 dependencies {
 	compile fileTree('../global/runtime')
-	compile fileTree('../global/cjtools')
-	compile fileTree('src/cj/refembeds')
-	compile fileTree('src/cj/references')
 }
 
  task releaseToProgram(type: Copy) {
@@ -29,6 +26,7 @@ dependencies {
  from 'build/libs/'
  into '../cj.studio.imc.be.router.program/src/cj/references'
  include '**/*.jar'
+ exclude '**/*-javadoc.jar','**/*-sources.jar'
  }
  task releaseToOutputs(type: Copy) {
  dependsOn "build"

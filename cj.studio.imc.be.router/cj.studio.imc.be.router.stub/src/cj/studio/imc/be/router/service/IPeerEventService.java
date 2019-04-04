@@ -4,7 +4,11 @@ import cj.studio.imc.be.router.args.DeviceInfo;
 import cj.studio.imc.be.router.args.UserInfo;
 
 public interface IPeerEventService {
-	void onTerminus(String path);
+	void onTerminus(String path, String peerOnMicNode, String routerOnMicNode);
+
+	void emtpyPeerOnline(String peerOnMicNode);
+
+	void emtpyRouterOnline(String routerOnMicNode);
 
 	void onDevice(String path, DeviceInfo device);
 
@@ -15,4 +19,5 @@ public interface IPeerEventService {
 	void offDevice(String uuid);
 
 	void offUser(UserInfo user);
+
 }

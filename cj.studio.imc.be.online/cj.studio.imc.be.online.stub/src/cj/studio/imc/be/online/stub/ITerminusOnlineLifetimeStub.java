@@ -22,7 +22,16 @@ import cj.studio.imc.be.online.args.UserInfo;
 @CjStubService(bindService = "/terminus/online.service", usage = "终端在线生命期管理存根")
 public interface ITerminusOnlineLifetimeStub {
 	@CjStubMethod(usage = "终端上线")
-	void onTerminus(@CjStubInParameter(key = "path", usage = "终端所在路径：on://terminuschannel/routerchannel") String path);
+	void onTerminus(@CjStubInParameter(key = "path", usage = "终端所在路径：on://terminuschannel/routerchannel") String path,
+			@CjStubInParameter(key = "peerOnMicNode", usage = "peer所在的微服节点的guid") String peerOnMicNode,
+			@CjStubInParameter(key = "routerOnMicNode", usage = "路由器网关所在的微服节点的guid") String routerOnMicNode);
+
+	@CjStubMethod(usage = "清空通过前台上线的在线列表")
+	void emtpyPeerOnline(@CjStubInParameter(key = "peerOnMicNode", usage = "peer所在的微服节点的guid") String peerOnMicNode);
+
+	@CjStubMethod(usage = "清空通过中台上线的在线列表")
+	void emtpyRouterOnline(
+			@CjStubInParameter(key = "routerOnMicNode", usage = "路由器网关所在的微服节点的guid") String routerOnMicNode);
 
 	@CjStubMethod(command = "post", usage = "终端上线")
 	void onDevice(@CjStubInParameter(key = "path", usage = "终端所在路径：on://terminuschannel/routerchannel") String path,

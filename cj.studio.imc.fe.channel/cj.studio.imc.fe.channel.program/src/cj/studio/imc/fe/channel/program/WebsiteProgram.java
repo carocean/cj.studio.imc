@@ -12,8 +12,6 @@ public class WebsiteProgram extends GatewayAppSiteProgram {
 	@Override
 	protected void onstart(Destination dest, String home, ProgramAdapterType type)
 			throws CircuitException {
-		
 	}
-
 
 }

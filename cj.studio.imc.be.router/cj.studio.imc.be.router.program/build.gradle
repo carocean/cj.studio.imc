@@ -19,8 +19,7 @@ sourceSets {
 
 dependencies {
 	compile fileTree('../global/runtime')
-	compile fileTree('../global/cjtools')
-	compile fileTree('src/cj/references')
+	//compile fileTree('src/cj/references')
 	compile project(':cj.studio.imc.be.router.stub');
 	
 }
@@ -29,6 +28,7 @@ task releaseToHost(type: Copy) {
  from 'build/libs/'
 into '../cmdtools/gateway/assemblies/router'
  include '**/*.jar'
+ exclude '**/*-javadoc.jar','**/*-sources.jar'
  }
  
  task release(type:Copy){

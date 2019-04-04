@@ -1,10 +1,13 @@
 package cj.studio.imc.fe.channel.program.valve;
 
+import cj.studio.ecm.IServiceSite;
 import cj.studio.ecm.Scope;
 import cj.studio.ecm.annotation.CjService;
 import cj.studio.ecm.annotation.CjServiceRef;
+import cj.studio.ecm.annotation.CjServiceSite;
 import cj.studio.ecm.net.CircuitException;
 import cj.studio.ecm.net.Frame;
+import cj.studio.gateway.IMicNode;
 import cj.studio.gateway.socket.pipeline.IAnnotationInputValve;
 import cj.studio.gateway.socket.pipeline.IIPipeline;
 import cj.studio.gateway.socket.util.SocketContants;
@@ -18,11 +21,13 @@ import cj.ultimate.gson2.com.google.gson.Gson;
 public class PeerEventInputValve implements IAnnotationInputValve {
 	@CjServiceRef(refByName = "$.rest")
 	IRest rest;
-
+	@CjServiceSite
+	IServiceSite site;
 	@Override
 	public void onActive(String inputName, IIPipeline pipeline) throws CircuitException {
+		IMicNode node=(IMicNode)site.getService(IMicNode.SERVICE_KEY);
 		IPeerEventStub peer = rest.forRemote("/backend/router/").open(IPeerEventStub.class, true);
-		peer.onTerminus(inputName);
+		peer.onTerminus(inputName,node.guid());
 		pipeline.nextOnActive(inputName, this);
 	}
 

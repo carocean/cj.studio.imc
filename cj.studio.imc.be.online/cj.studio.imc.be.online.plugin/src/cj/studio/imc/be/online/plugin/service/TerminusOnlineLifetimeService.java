@@ -24,17 +24,26 @@ public class TerminusOnlineLifetimeService implements ITerminusOnlineLifetimeSer
 	ICube online;
 
 	@Override
-	public void onTerminus(String path) {
+	public void onTerminus(String path,String peerOnMicNode,String routerOnMicNode) {
 		TerminusOnlineLifetime t=getByPath(path);
 		if(t!=null) {
 			offTerminus(path);
 		}
 		TerminusOnlineLifetime tolt = new TerminusOnlineLifetime();
 		tolt.setPath(path);
+		tolt.setPeerOnMicNode(peerOnMicNode);
+		tolt.setRouterOnMicNode(routerOnMicNode);
 		tolt.setCtime(System.currentTimeMillis());
 		online.saveDoc("online.lifetime", new TupleDocument<>(tolt));
 	}
-
+	@Override
+	public void emtpyPeerOnline(String peerOnMicNode) {
+		online.deleteDocs("online.lifetime", String.format("{'tuple.peerOnMicNode':'%s'}", peerOnMicNode));
+	}
+	@Override
+	public void emtpyRouterOnline(String routerOnMicNode) {
+		online.deleteDocs("online.lifetime", String.format("{'tuple.routerOnMicNode':'%s'}", routerOnMicNode));
+	}
 	@Override
 	public void onDevice(String path, DeviceInfo device) {
 		Bson where = Document.parse(String.format("{'tuple.path':'%s'}", path));

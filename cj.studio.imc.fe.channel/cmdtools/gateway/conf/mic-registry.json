@@ -1,0 +1,13 @@
+{
+	"guid":"747D6D61-3BEF-402E-BE36-81B3B1AC1E23",
+	"title":"cj.studio.imc.fe.channel",
+	"enabled":true,
+	"desc":"即时通讯中心/管道.前台",
+	"mic":{
+		"location":"/infrastructurePlatform/imc/",
+		"host":"tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/",
+		"reconnDelay":6000,
+		"reconnPeriod":15000,
+		"cjtoken":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjaiIsInBhc3N3b3JkIjoiMTEiLCJleHAiOjExNzQ2OTMwMzIwNjUsInVzZXIiOiJjaiIsImlhdCI6MTU1MzgzMjA2NSwianRpIjoiY2Q2MWQwYmEtNDhjMy00NzNkLTlkYTMtMDBlZGFlYzFkNDc2In0.1Yq4mMYTYO0nzeWSpg2wJhgUtK-e2tdKf1f3fM3mh0Q"
+	}
+}

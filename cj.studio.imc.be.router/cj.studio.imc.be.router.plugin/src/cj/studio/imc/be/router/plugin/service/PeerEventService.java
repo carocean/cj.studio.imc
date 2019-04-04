@@ -15,10 +15,17 @@ public class PeerEventService implements IPeerEventService {
 	ITerminusOnlineLifetimeStub online;
 
 	@Override
-	public void onTerminus(String path) {
-		online.onTerminus(path);
+	public void onTerminus(String path,String peerOnMicNode,String routerOnMicNode) {
+		online.onTerminus(path,peerOnMicNode,routerOnMicNode);
 	}
-
+	@Override
+	public void emtpyPeerOnline(String peerOnMicNode) {
+		online.emtpyPeerOnline(peerOnMicNode);
+	}
+	@Override
+	public void emtpyRouterOnline(String routerOnMicNode) {
+		online.emtpyRouterOnline(routerOnMicNode);
+	}
 	@Override
 	public void onDevice(String path, DeviceInfo device) {
 		cj.studio.imc.be.online.args.DeviceInfo d = new cj.studio.imc.be.online.args.DeviceInfo();
