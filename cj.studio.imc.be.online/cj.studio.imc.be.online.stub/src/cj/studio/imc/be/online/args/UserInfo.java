@@ -1,20 +1,20 @@
 package cj.studio.imc.be.online.args;
 
 public class UserInfo {
-	String appCode;
+	String tenantCode;
 	String userCode;
 	public UserInfo() {
 	}
-	public UserInfo(String appCode, String userCode) {
+	public UserInfo(String tenantCode, String userCode) {
 		super();
-		this.appCode = appCode;
+		this.tenantCode = tenantCode;
 		this.userCode = userCode;
 	}
-	public String getAppCode() {
-		return appCode;
+	public String getTenantCode() {
+		return tenantCode;
 	}
-	public void setAppCode(String appCode) {
-		this.appCode = appCode;
+	public void setTenantCode(String tenantCode) {
+		this.tenantCode = tenantCode;
 	}
 	public String getUserCode() {
 		return userCode;

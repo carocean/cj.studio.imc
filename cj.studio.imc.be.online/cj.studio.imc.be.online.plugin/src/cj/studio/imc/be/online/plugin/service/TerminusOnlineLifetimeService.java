@@ -99,8 +99,8 @@ public class TerminusOnlineLifetimeService implements ITerminusOnlineLifetimeSer
 	@Override
 	public List<TerminusOnlineLifetime> getByUser(UserInfo user) {
 		String cjql = String.format(
-				"select {'tuple':'*'} from tuple online.lifetime %s where {'tuple.user.appCode':'%s','tuple.user.userCode':'%s'}",
-				TerminusOnlineLifetime.class.getName(), user.getAppCode(), user.getUserCode());
+				"select {'tuple':'*'} from tuple online.lifetime %s where {'tuple.user.tenantCode':'%s','tuple.user.userCode':'%s'}",
+				TerminusOnlineLifetime.class.getName(), user.getTenantCode(), user.getUserCode());
 		IQuery<TerminusOnlineLifetime> q = online.createQuery(cjql);
 		List<IDocument<TerminusOnlineLifetime>> list = q.getResultList();
 		List<TerminusOnlineLifetime> newlist = new ArrayList<>();

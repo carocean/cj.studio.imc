@@ -19,7 +19,7 @@
 		},{
 			"name": "/backend/router/",
 			"uris": [
-				"tcp://localhost:10004"
+				"tcp://localhost:10004?OnChannelEvent-Notify-Dests=imchannel"
 			],
 			"props": {
 				

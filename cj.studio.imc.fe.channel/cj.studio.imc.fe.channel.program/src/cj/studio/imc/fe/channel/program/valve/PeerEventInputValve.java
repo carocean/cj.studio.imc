@@ -45,12 +45,13 @@ public class PeerEventInputValve implements IAnnotationInputValve {
 				peer.onDevice(f.head(SocketContants.__frame_fromPipelineName), device);
 				break;
 			case "onUser":
-				String principals=f.head("UC-Principals");
-				String subject=f.head("UC-Subject");
-				UserInfo user=new UserInfo(principals,subject);
-				peer.onUser(f.head(SocketContants.__frame_fromPipelineName), user);
+				String user=f.head("UC-User");
+				String tenant=f.head("UC-Tenant");
+				UserInfo userInfo=new UserInfo(tenant,user);
+				peer.onUser(f.head(SocketContants.__frame_fromPipelineName), userInfo);
 				break;
 			}
+			pipeline.nextFlow(request, response, this);
 			return;
 		}
 		pipeline.nextFlow(request, response, this);

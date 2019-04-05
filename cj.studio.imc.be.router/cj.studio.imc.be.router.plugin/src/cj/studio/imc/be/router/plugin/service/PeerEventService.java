@@ -39,7 +39,7 @@ public class PeerEventService implements IPeerEventService {
 	@Override
 	public void onUser(String path, UserInfo user) {
 		cj.studio.imc.be.online.args.UserInfo d = new cj.studio.imc.be.online.args.UserInfo();
-		d.setAppCode(user.getAppCode());
+		d.setTenantCode(user.getTenantCode());
 		d.setUserCode(user.getUserCode());
 		online.onUser(path, d);
 
@@ -58,7 +58,7 @@ public class PeerEventService implements IPeerEventService {
 	@Override
 	public void offUser(UserInfo user) {
 		cj.studio.imc.be.online.args.UserInfo d = new cj.studio.imc.be.online.args.UserInfo();
-		d.setAppCode(user.getAppCode());
+		d.setTenantCode(user.getTenantCode());
 		d.setUserCode(user.getUserCode());
 		online.offUser(d);
 	}
