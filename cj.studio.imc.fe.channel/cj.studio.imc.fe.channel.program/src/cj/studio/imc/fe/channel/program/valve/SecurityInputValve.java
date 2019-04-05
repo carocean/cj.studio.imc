@@ -54,7 +54,7 @@ public class SecurityInputValve implements IAnnotationInputValve {
 
 	@Override
 	public int getSort() {
-		return 1;
+		return 2;
 	}
 
 }

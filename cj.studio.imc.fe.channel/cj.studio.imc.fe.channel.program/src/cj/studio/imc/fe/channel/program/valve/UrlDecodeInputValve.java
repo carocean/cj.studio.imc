@@ -40,7 +40,7 @@ public class UrlDecodeInputValve implements IAnnotationInputValve{
 
 	@Override
 	public int getSort() {
-		return 0;
+		return 1;
 	}
 
 }

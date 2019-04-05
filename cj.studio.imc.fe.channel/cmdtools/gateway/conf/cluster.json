@@ -19,7 +19,7 @@
 		},{
 			"name": "/backend/router/",
 			"uris": [
-				"tcp://localhost:10004?OnChannelEvent-Notify-Dests=imchannel"
+				"tcp://localhost:10004?OnChannelEvent-Notify-Dests=imchannel&initialWireSize=1&workThreadCount=4"
 			],
 			"props": {
 				

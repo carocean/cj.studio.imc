@@ -66,7 +66,7 @@ public class PeerEventInputValve implements IAnnotationInputValve {
 
 	@Override
 	public int getSort() {
-		return 2;
+		return 3;
 	}
 
 }
