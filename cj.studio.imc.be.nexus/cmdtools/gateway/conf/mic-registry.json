@@ -1,0 +1,13 @@
+{
+	"guid":"31EC8B83-18B1-4A67-810A-C804EF34963A",
+	"title":"cj.studio.imc.be.nexus",
+	"enabled":true,
+	"desc":"即时通讯中心/连接器.中台",
+	"mic":{
+		"location":"/infrastructurePlatform/imc/",
+		"host":"tcp://localhost:7080?heartbeat=5000&initialWireSize=1&workThreadCount=2&acceptErrorPath=/website/error/",
+		"reconnDelay":6000,
+		"reconnPeriod":15000,
+		"cjtoken":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuZXRvcy5taWMiLCJleHAiOjMzMDkwNDAwMTQwLCJ1c2VyIjoiY2oiLCJpYXQiOjE1NTQ0MDAxNDAsImp0aSI6IjRkNjU3OGQ1LTZjMmMtNGVlYi1iYjUwLWZjN2VkNDk1OWYzYiJ9.pWWSWCYgTGrE5MI6GgRHwK7l-Rhzjg2KicR54y_1gTg"
+	}
+}

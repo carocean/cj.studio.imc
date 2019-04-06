@@ -1,0 +1,4 @@
+include "cj.studio.imc.be.nexus.program"
+include "cj.studio.imc.be.nexus.main"
+include "cj.studio.imc.be.nexus.plugin"
+include "cj.studio.imc.be.nexus.stub"

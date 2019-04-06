@@ -1,0 +1,37 @@
+sourceSets { 
+	 main { 
+	 	java{
+	 		srcDir "$projectDir/src"
+	 	}
+	 	resources{
+		 	srcDir "$projectDir/site-src"
+		 }
+	 } 
+ 	}
+ 	sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+ 	tasks.withType(JavaCompile) {  
+        options.encoding = "UTF-8"  
+    } 
+ repositories { 
+	 flatDir(dirs: "../global/lib") 
+ } 
+
+dependencies {
+	compile project(':cj.studio.imc.be.nexus.stub');
+	compile fileTree('../global/runtime')
+	compile fileTree('../global/cjtools')
+	//compile fileTree('src/cj/references')
+	
+}
+task releaseToHost(type: Copy) {
+ dependsOn "build",":cj.studio.imc.be.nexus.stub:release"
+ from 'build/libs/'
+into '../cmdtools/gateway/assemblies/nexus'
+ include '**/*.jar'
+ exclude '**/*-javadoc.jar','**/*-sources.jar'
+ }
+ 
+ task release(type:Copy){
+  dependsOn "releaseToHost"
+ }
